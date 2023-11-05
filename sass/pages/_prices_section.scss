@@ -71,61 +71,56 @@
           display: flex;
           align-items: center;
           gap: 15px;
-          form {
+          input {
+            background-color: #eeeeee;
+            padding-left: 5px;
+            font-size: 16px;
+            font-family: $baloo-font;
+            width: 40px;
+            height: 30px;
+            border-radius: 5px;
+            border: 2px solid $Light-Gray3;
+          }
+          button {
+            cursor: pointer;
+            transition: 0.4s;
+            font-family: $baloo-font;
+            font-size: 16px;
             display: flex;
             align-items: center;
-            gap: 10px;
-            input {
-              background-color: #eeeeee;
-              padding-left: 5px;
-              font-size: 16px;
-              font-family: $baloo-font;
-              width: 40px;
-              height: 30px;
-              border-radius: 5px;
-              border: 2px solid $Light-Gray3;
-            }
-            button {
-              cursor: pointer;
-              transition: 0.4s;
-              font-family: $baloo-font;
-              font-size: 16px;
+            justify-content: space-between;
+            border-radius: 5px;
+            border: 2px solid $Light-Gray3;
+            background-color: $Orange;
+            width: 150px;
+            height: 60px;
+            i {
               display: flex;
               align-items: center;
-              justify-content: space-between;
+              justify-content: center;
+              height: 70%;
               border-radius: 5px;
-              border: 2px solid $Light-Gray3;
+              width: 40px;
               background-color: $Orange;
-              width: 150px;
-              height: 60px;
-              i {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 70%;
-                border-radius: 5px;
-                width: 40px;
-                background-color: $Orange;
-                color: $White;
-                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-                  rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-              }
-              p {
-                transition: 0.4s;
-                margin-left: 10px;
-                color: $White;
-                font-weight: 700;
-                font-size: 16px;
-              }
+              color: $White;
+              box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+                rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
             }
-            button:hover {
-              background-color: $White;
-              border: 2px solid $Orange;
-              transform: scale(0.95);
+            p {
+              transition: 0.4s;
+              margin-left: 10px;
+              color: $White;
+              font-weight: 700;
+              font-size: 16px;
             }
-            button:hover p {
-              color: $Orange;
-            }
+          }
+          button:hover {
+            background-color: $White;
+            border: 2px solid $Orange;
+            transform: scale(0.95);
+          }
+          button:hover p {
+            color: $Orange;
           }
         }
       }
