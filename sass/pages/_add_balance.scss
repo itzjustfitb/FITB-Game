@@ -1,0 +1,997 @@
+.add_balance_section {
+  transition: 0.4s;
+  font-family: $baloo-font;
+
+  width: 100%;
+  height: 660px;
+  background-color: $Gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .add_balance_container {
+    transition: 0.4s;
+    background-color: $White;
+    border-radius: 5px;
+    height: 630px;
+    width: 1250px;
+    display: flex;
+    flex-direction: column;
+    h5 {
+      transition: 0.4s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      font-weight: 500;
+      height: 60px;
+    }
+    .add_balance_table {
+      transition: 0.4s;
+      display: flex;
+      height: 570px;
+      flex-direction: column;
+      .add_balance_row {
+        transition: 0.4s;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 190px;
+        .row_top {
+          transition: 0.4s;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          height: 190px;
+          justify-content: space-around;
+          width: 100%;
+          border-bottom: 1px solid $Light-Gray3;
+          img {
+            width: 300px;
+            border-radius: 5px;
+          }
+          .add_balance_title {
+            transition: 0.4s;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 140px;
+            gap: 20px;
+            div {
+              display: flex;
+              flex-direction: column;
+              height: 50px;
+              gap: 5px;
+              h1 {
+                font-size: 24px;
+                font-weight: 500;
+              }
+              p {
+                color: $Dark-Gray;
+                font-size: 18px;
+              }
+            }
+          }
+          .card_owner {
+            display: flex;
+            flex-direction: column;
+            height: 140px;
+            justify-content: center;
+            gap: 20px;
+            div {
+              display: flex;
+              flex-direction: column;
+              gap: 5px;
+              height: 50px;
+              h1 {
+                font-size: 24px;
+                font-weight: 500;
+              }
+              p {
+                font-size: 18px;
+                color: $Dark-Gray;
+              }
+            }
+            button {
+              cursor: pointer;
+              width: 200px;
+              height: 50px;
+              display: flex;
+              gap: 10px;
+              justify-content: center;
+              align-items: center;
+              font-family: $baloo-font;
+              border-radius: 5px;
+              background-color: $Green;
+              border: none;
+              font-size: 16px;
+              color: $White;
+              transition: 0.4s;
+              i {
+                margin-bottom: 1px;
+                transition: 0.4s;
+              }
+            }
+            button:hover {
+              background-color: $Dark-Green;
+            }
+          }
+        }
+        .row_slider {
+          transition: 0.2s;
+          display: flex;
+          opacity: 0;
+          visibility: hidden;
+          position: absolute;
+          top: 190px;
+          justify-content: center;
+          align-items: center;
+          border-bottom: 1px solid $Light-Gray3;
+          gap: 150px;
+          width: 100%;
+          height: 0px;
+          > div {
+            width: 360px;
+          }
+          label {
+            transition: 0.4s;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            background-color: $Green;
+            width: 360px;
+            color: $White;
+            height: 40px;
+            font-size: 18px;
+          }
+          label:hover {
+            background-color: $Dark-Green;
+          }
+
+          input[type="file"] {
+            display: none;
+            color: transparent;
+          }
+
+          button {
+            cursor: pointer;
+            transition: 0.4s;
+            background-color: $Orange;
+            color: $White;
+            width: 360px;
+            height: 40px;
+            border-radius: 5px;
+            border: none;
+            font-size: 18px;
+            font-family: $baloo-font;
+          }
+          button:hover {
+            background-color: #c97200;
+          }
+        }
+      }
+    }
+    .add_balance_row:last-child {
+      .row_top {
+        border-color: transparent;
+      }
+      .row_slider {
+        border-bottom: 0px;
+        border-top: 1px solid $Light-Gray3;
+      }
+    }
+  }
+}
+
+.for_add_balance_slider1 {
+  height: 760px;
+  .add_balance_container {
+    height: 730px;
+    .add_balance_table {
+      height: 670.6px;
+      #first_row {
+        height: 291.6px;
+        .row_top {
+          button {
+            i {
+              transform: rotate(180deg);
+            }
+          }
+        }
+        #first_row_slider {
+          height: 100px;
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
+.for_add_balance_slider2 {
+  height: 760px;
+  .add_balance_container {
+    height: 730px;
+    .add_balance_table {
+      height: 670.6px;
+      #second_row {
+        height: 291.6px;
+        .row_top {
+          button {
+            i {
+              transform: rotate(180deg);
+            }
+          }
+        }
+        #second_row_slider {
+          height: 100px;
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
+.for_add_balance_slider3 {
+  height: 760px;
+  .add_balance_container {
+    height: 730px;
+    .add_balance_table {
+      height: 670.6px;
+      #third_row {
+        height: 291.6px;
+        .row_top {
+          button {
+            i {
+              transform: rotate(180deg);
+            }
+          }
+        }
+        #third_row_slider {
+          height: 100px;
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .add_balance_section {
+    font-family: $baloo-font;
+    width: 100%;
+    height: 660px;
+    background-color: $Gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .add_balance_container {
+      background-color: $White;
+      border-radius: 5px;
+      height: 630px;
+      width: 1000px;
+      display: flex;
+      flex-direction: column;
+
+      h5 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 28px;
+        font-weight: 500;
+        height: 60px;
+      }
+      .add_balance_table {
+        display: flex;
+        flex-direction: column;
+      }
+      .add_balance_row {
+        display: flex;
+        flex-direction: column;
+        .row_top {
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          height: 190px;
+          width: 100%;
+          justify-content: space-around;
+
+          img {
+            width: 300px;
+            border-radius: 5px;
+          }
+          .add_balance_title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 140px;
+            gap: 20px;
+            div {
+              display: flex;
+              flex-direction: column;
+              height: 50px;
+              gap: 5px;
+              h1 {
+                font-size: 24px;
+                font-weight: 500;
+              }
+              p {
+                color: $Dark-Gray;
+                font-size: 18px;
+              }
+            }
+          }
+          .card_owner {
+            display: flex;
+            flex-direction: column;
+            height: 140px;
+            justify-content: center;
+            gap: 20px;
+            div {
+              display: flex;
+              flex-direction: column;
+              gap: 5px;
+              height: 50px;
+              h1 {
+                font-size: 24px;
+                font-weight: 500;
+              }
+              p {
+                font-size: 18px;
+                color: $Dark-Gray;
+              }
+            }
+            button {
+              cursor: pointer;
+              width: 200px;
+              height: 50px;
+              display: flex;
+              gap: 10px;
+              justify-content: center;
+              align-items: center;
+              font-family: $baloo-font;
+              border-radius: 5px;
+              background-color: $Green;
+              border: none;
+              font-size: 16px;
+              color: $White;
+              transition: 0.4s;
+              i {
+                transition: 0.4s;
+              }
+            }
+            button:hover {
+              background-color: $Dark-Green;
+            }
+          }
+        }
+        .row_slider {
+          display: none;
+          justify-content: center;
+          align-items: center;
+          border-bottom: 1px solid $Light-Gray3;
+          gap: 150px;
+          height: 100px;
+          > div {
+            width: 360px;
+          }
+          label {
+            transition: 0.4s;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            background-color: $Green;
+            width: 360px;
+            color: $White;
+            height: 40px;
+            font-size: 18px;
+          }
+          label:hover {
+            background-color: $Dark-Green;
+          }
+
+          input[type="file"] {
+            display: none;
+            color: transparent;
+          }
+
+          button {
+            cursor: pointer;
+            transition: 0.4s;
+            background-color: $Orange;
+            color: $White;
+            width: 360px;
+            height: 40px;
+            border-radius: 5px;
+            border: none;
+            font-size: 18px;
+            font-family: $baloo-font;
+          }
+          button:hover {
+            background-color: #c97200;
+          }
+        }
+      }
+      .add_balance_row:last-child {
+        .row_top {
+          border-color: transparent;
+        }
+        .row_slider {
+          border-bottom: 0px;
+          border-top: 1px solid $Light-Gray3;
+        }
+      }
+    }
+  }
+  .for_add_balance_slider1 {
+    height: 760px;
+    .add_balance_container {
+      height: 730px;
+      .add_balance_table {
+        height: 670.6px;
+        #first_row {
+          height: 291.6px;
+          .row_top {
+            button {
+              i {
+                transform: rotate(180deg);
+              }
+            }
+          }
+          #first_row_slider {
+            height: 100px;
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+    }
+  }
+  .for_add_balance_slider2 {
+    height: 760px;
+    .add_balance_container {
+      height: 730px;
+      .add_balance_table {
+        height: 670.6px;
+        #second_row {
+          height: 291.6px;
+          .row_top {
+            button {
+              i {
+                transform: rotate(180deg);
+              }
+            }
+          }
+          #second_row_slider {
+            height: 100px;
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+    }
+  }
+  .for_add_balance_slider3 {
+    height: 760px;
+    .add_balance_container {
+      height: 730px;
+      .add_balance_table {
+        height: 670.6px;
+        #third_row {
+          height: 291.6px;
+          .row_top {
+            button {
+              i {
+                transform: rotate(180deg);
+              }
+            }
+          }
+          #third_row_slider {
+            height: 100px;
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .add_balance_section {
+    font-family: $baloo-font;
+    width: 100%;
+    height: 660px;
+    background-color: $Gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .add_balance_container {
+      background-color: $White;
+      border-radius: 5px;
+      height: 630px;
+      width: 600px;
+      display: flex;
+      flex-direction: column;
+
+      h5 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 28px;
+        font-weight: 500;
+        height: 60px;
+      }
+      .add_balance_table {
+        display: flex;
+        flex-direction: column;
+        .add_balance_row {
+          display: flex;
+          flex-direction: column;
+          .row_top {
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            height: 190px;
+            width: 100%;
+            justify-content: space-around;
+
+            img {
+              width: 300px;
+              border-radius: 5px;
+            }
+            .add_balance_title {
+              display: none;
+              flex-direction: column;
+              justify-content: center;
+              height: 140px;
+              gap: 20px;
+              div {
+                display: flex;
+                flex-direction: column;
+                height: 50px;
+                gap: 5px;
+                h1 {
+                  font-size: 24px;
+                  font-weight: 500;
+                }
+                p {
+                  color: $Dark-Gray;
+                  font-size: 18px;
+                }
+              }
+            }
+            .card_owner {
+              display: flex;
+              flex-direction: column;
+              height: 140px;
+              justify-content: center;
+              gap: 20px;
+              div {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                height: 50px;
+                h1 {
+                  font-size: 24px;
+                  font-weight: 500;
+                }
+                p {
+                  font-size: 18px;
+                  color: $Dark-Gray;
+                }
+              }
+              button {
+                cursor: pointer;
+                width: 200px;
+                height: 50px;
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+                font-family: $baloo-font;
+                border-radius: 5px;
+                background-color: $Green;
+                border: none;
+                font-size: 16px;
+                color: $White;
+                transition: 0.4s;
+                i {
+                  transition: 0.4s;
+                }
+              }
+              button:hover {
+                background-color: $Dark-Green;
+              }
+            }
+          }
+          .row_slider {
+            transition: 0.2s;
+            display: flex;
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            top: 190px;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid $Light-Gray3;
+            gap: 40px;
+            width: 100%;
+            height: 0px;
+            > div {
+              width: 200px;
+            }
+            label {
+              transition: 0.4s;
+              cursor: pointer;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 5px;
+              background-color: $Green;
+              width: 200px;
+              color: $White;
+              height: 40px;
+              font-size: 18px;
+            }
+            label:hover {
+              background-color: $Dark-Green;
+            }
+
+            input[type="file"] {
+              display: none;
+              color: transparent;
+            }
+
+            button {
+              cursor: pointer;
+              transition: 0.4s;
+              background-color: $Orange;
+              color: $White;
+              width: 200px;
+              height: 40px;
+              border-radius: 5px;
+              border: none;
+              font-size: 18px;
+              font-family: $baloo-font;
+            }
+            button:hover {
+              background-color: #c97200;
+            }
+          }
+        }
+        .add_balance_row:last-child {
+          .row_top {
+            border-color: transparent;
+          }
+          .row_slider {
+            border-bottom: 0px;
+            border-top: 1px solid $Light-Gray3;
+          }
+        }
+      }
+    }
+  }
+  .for_add_balance_slider1 {
+    height: 760px;
+    .add_balance_container {
+      height: 730px;
+      .add_balance_table {
+        height: 670.6px;
+        #first_row {
+          height: 291.6px;
+          .row_top {
+            button {
+              i {
+                transform: rotate(180deg);
+              }
+            }
+          }
+          #first_row_slider {
+            height: 100px;
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+    }
+  }
+  .for_add_balance_slider2 {
+    height: 760px;
+    .add_balance_container {
+      height: 730px;
+      .add_balance_table {
+        height: 670.6px;
+        #second_row {
+          height: 291.6px;
+          .row_top {
+            button {
+              i {
+                transform: rotate(180deg);
+              }
+            }
+          }
+          #second_row_slider {
+            height: 100px;
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+    }
+  }
+  .for_add_balance_slider3 {
+    height: 760px;
+    .add_balance_container {
+      height: 730px;
+      .add_balance_table {
+        height: 670.6px;
+        #third_row {
+          height: 291.6px;
+          .row_top {
+            button {
+              i {
+                transform: rotate(180deg);
+              }
+            }
+          }
+          #third_row_slider {
+            height: 100px;
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  .add_balance_section {
+    font-family: $baloo-font;
+    width: 100%;
+    height: 660px;
+    background-color: $Gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .add_balance_container {
+      background-color: $White;
+      border-radius: 5px;
+      height: 630px;
+      width: 340px;
+      display: flex;
+      flex-direction: column;
+
+      h5 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: 500;
+        height: 60px;
+      }
+      .add_balance_table {
+        display: flex;
+        flex-direction: column;
+        .add_balance_row {
+          display: flex;
+          flex-direction: column;
+          .row_top {
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            height: 190px;
+            width: 100%;
+            justify-content: space-around;
+
+            img {
+              width: 200px;
+              border-radius: 5px;
+            }
+            .add_balance_title {
+              display: none;
+              flex-direction: column;
+              justify-content: center;
+              height: 140px;
+              gap: 20px;
+              div {
+                display: flex;
+                flex-direction: column;
+                height: 50px;
+                gap: 5px;
+                h1 {
+                  font-size: 24px;
+                  font-weight: 500;
+                }
+                p {
+                  color: $Dark-Gray;
+                  font-size: 18px;
+                }
+              }
+            }
+            .card_owner {
+              display: flex;
+              flex-direction: column;
+              height: 140px;
+              justify-content: center;
+              gap: 20px;
+              div {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                height: 50px;
+                h1 {
+                  font-size: 16px;
+                  font-weight: 500;
+                }
+                p {
+                  font-size: 12px;
+                  color: $Dark-Gray;
+                }
+              }
+              button {
+                cursor: pointer;
+                width: 100px;
+                height: 40px;
+                display: flex;
+                gap: 5px;
+                justify-content: center;
+                align-items: center;
+                font-family: $baloo-font;
+                border-radius: 5px;
+                background-color: $Green;
+                border: none;
+                font-size: 12px;
+                color: $White;
+                transition: 0.4s;
+                i {
+                  transition: 0.4s;
+                }
+              }
+              button:hover {
+                background-color: $Dark-Green;
+              }
+            }
+          }
+          .row_slider {
+            transition: 0.2s;
+            display: flex;
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            top: 190px;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid $Light-Gray3;
+            gap: 40px;
+            width: 100%;
+            height: 0px;
+            > div {
+              width: 100px;
+            }
+            label {
+              transition: 0.4s;
+              cursor: pointer;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 5px;
+              background-color: $Green;
+              width: 100px;
+              color: $White;
+              height: 40px;
+              font-size: 18px;
+            }
+            label:hover {
+              background-color: $Dark-Green;
+            }
+
+            input[type="file"] {
+              display: none;
+              color: transparent;
+            }
+
+            button {
+              cursor: pointer;
+              transition: 0.4s;
+              background-color: $Orange;
+              color: $White;
+              width: 100px;
+              height: 40px;
+              border-radius: 5px;
+              border: none;
+              font-size: 18px;
+              font-family: $baloo-font;
+            }
+            button:hover {
+              background-color: #c97200;
+            }
+          }
+        }
+        .add_balance_row:last-child {
+          .row_top {
+            border-color: transparent;
+          }
+          .row_slider {
+            border-bottom: 0px;
+            border-top: 1px solid $Light-Gray3;
+          }
+        }
+      }
+    }
+  }
+  .for_add_balance_slider1 {
+    height: 760px;
+    .add_balance_container {
+      height: 730px;
+      .add_balance_table {
+        height: 670.6px;
+        #first_row {
+          height: 291.6px;
+          .row_top {
+            button {
+              i {
+                transform: rotate(180deg);
+              }
+            }
+          }
+          #first_row_slider {
+            height: 100px;
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+    }
+  }
+  .for_add_balance_slider2 {
+    height: 760px;
+    .add_balance_container {
+      height: 730px;
+      .add_balance_table {
+        height: 670.6px;
+        #second_row {
+          height: 291.6px;
+          .row_top {
+            button {
+              i {
+                transform: rotate(180deg);
+              }
+            }
+          }
+          #second_row_slider {
+            height: 100px;
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+    }
+  }
+  .for_add_balance_slider3 {
+    height: 760px;
+    .add_balance_container {
+      height: 730px;
+      .add_balance_table {
+        height: 670.6px;
+        #third_row {
+          height: 291.6px;
+          .row_top {
+            button {
+              i {
+                transform: rotate(180deg);
+              }
+            }
+          }
+          #third_row_slider {
+            height: 100px;
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+    }
+  }
+}
