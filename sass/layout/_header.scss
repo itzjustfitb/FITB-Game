@@ -1,0 +1,1643 @@
+@import "../base/typography";
+@import "../abstracts/colors";
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .header_top {
+    width: 100%;
+    height: 65px;
+    background-color: $Gray;
+    display: flex;
+    justify-content: center;
+    .header_left {
+      width: 640px;
+      display: flex;
+      align-items: center;
+      #burger_menu {
+        display: none;
+      }
+      ul {
+        display: flex;
+        gap: 10px;
+        li {
+          gap: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: $Dark-Gray;
+          i {
+            margin-top: -1px;
+            font-size: 13px;
+            transition: 0.4s;
+          }
+          a {
+            font-size: 12px;
+            font-family: $baloo_font;
+            text-decoration: none;
+            color: $Dark-Gray;
+            transition: 0.4s;
+          }
+        }
+        li:hover i,
+        li:hover a {
+          color: $Orange;
+          transform: translateY(1.2px);
+        }
+      }
+    }
+    .header_right {
+      width: 640px;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      gap: 20px;
+      .modes {
+        cursor: pointer;
+        background-color: $White;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 70px;
+        height: 35px;
+        border-radius: 23px;
+        i {
+          width: 25px;
+          height: 25px;
+          display: flex;
+          font-size: 16px;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+        i:first-child {
+          transition: 0.4s;
+          color: $Black;
+        }
+        i:last-child {
+          transition: 0.4s;
+          background-color: $Orange;
+          color: white;
+        }
+      }
+      .modes:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+      }
+      .header_buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        button {
+          font-family: $baloo_font;
+          cursor: pointer;
+          width: 57px;
+          height: 31px;
+          border-radius: 5px;
+          background-color: $Orange;
+          color: white;
+          border: none;
+          transition: 0.4s;
+        }
+        button:last-child {
+          width: 91px;
+          background-color: $Dark-Gray;
+        }
+        button:hover {
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+            rgba(0, 0, 0, 0.05) 0px 5px 10px;
+          transform: translateY(1.2px);
+        }
+      }
+      #login_user {
+        display: none;
+      }
+      .basket {
+        transition: 0.4s;
+        cursor: pointer;
+        font-family: $baloo-font;
+        width: 140px;
+        display: flex;
+        background-color: $Orange;
+        border-radius: 20px;
+        height: 30px;
+        span {
+          margin-left: -3px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 30px;
+          font-weight: 530;
+          border-radius: 50%;
+          background-color: $White;
+        }
+        div {
+          width: 100px;
+          display: flex;
+          gap: 5px;
+          justify-content: center;
+          align-items: center;
+          color: $White;
+        }
+      }
+      .basket:hover {
+        box-shadow: inset -22px -25px 15px -3px rgba(0, 0, 0, 0.1);
+        animation: shake 0.5s linear;
+      }
+      .profile {
+        position: relative;
+        font-family: $baloo_font;
+        display: flex;
+        flex-direction: column;
+        .profile_top {
+          // z-index: 10001;
+          cursor: pointer;
+          width: 70px;
+          height: 40px;
+          border-radius: 10px;
+          background-color: $White;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+            rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+            rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+          img {
+            width: 30px;
+            border-radius: 50%;
+            margin-right: 20px;
+            z-index: 1;
+          }
+          i {
+            position: absolute;
+            width: 12px;
+            transition: 0.4s;
+            color: $Orange;
+            // z-index: -1;
+          }
+          i:nth-child(2) {
+            right: 10px;
+          }
+          i:last-child {
+            right: 45px;
+          }
+          .transform {
+            transform: rotate(180deg);
+          }
+        }
+        .profile_slider {
+          transition: 0.4s;
+          z-index: 10000;
+          border-radius: 5px;
+          width: 300px;
+          right: 0;
+          top: 50px;
+          height: 0;
+          position: absolute;
+          opacity: 0;
+          visibility: hidden;
+          background-color: $White;
+          display: flex;
+          flex-direction: column;
+          border: 1px solid $Light-Gray3;
+          align-items: center;
+          box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+            rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+            rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+          .profile_slider_top {
+            transition: 0.4s;
+            opacity: 0;
+            width: 280px;
+            height: 70px;
+            height: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 1px solid $Light-Gray3;
+            img {
+              width: 50px;
+              border-radius: 50%;
+            }
+            div {
+              display: flex;
+              flex-direction: column;
+              gap: 5px;
+              p:first-child {
+                font-size: 18px;
+              }
+              p:last-child {
+                font-size: 12px;
+              }
+            }
+          }
+          .profile_slider_middle {
+            transition: 0.4s;
+            opacity: 0;
+            width: 280px;
+            height: 130px;
+            height: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 1px solid $Light-Gray3;
+            div {
+              border-radius: 5px;
+              width: 100%;
+              border: 2px solid $Orange;
+              height: 110px;
+              display: flex;
+              flex-direction: column;
+              gap: 5px;
+              align-items: center;
+              justify-content: space-around;
+              p {
+                font-size: 16px;
+                font-weight: 700;
+              }
+              span {
+                font-size: 22px;
+                color: $Orange;
+                font-weight: 700;
+              }
+              button {
+                transition: 0.4s;
+                cursor: pointer;
+                width: 95%;
+                background-color: $Orange;
+                border: 2px solid transparent;
+                border-radius: 5px;
+                height: 25px;
+                color: $White;
+                font-family: $baloo_font;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                a {
+                  text-decoration: none;
+                  color: $White;
+                }
+              }
+              button:hover {
+                background-color: transparent;
+                color: $Orange;
+                border-color: $Orange;
+                a {
+                  color: $Orange;
+                }
+              }
+            }
+          }
+          .profile_slider_bottom {
+            transition: 0.4s;
+            opacity: 0;
+            width: 280px;
+            height: 0;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            .profile_slider_menu {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              gap: 5px;
+              align-items: start;
+              justify-content: space-around;
+              .profile_slider_row {
+                transition: 0.4s;
+                position: relative;
+                cursor: pointer;
+                border-radius: 5px;
+                width: 100%;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                i {
+                  transition: 0.4s;
+                  margin-left: 20px;
+                  font-size: 18px;
+                  color: $Dark-Gray;
+                }
+                a {
+                  transition: 0.4s;
+                  color: $Dark-Gray;
+                  text-decoration: none;
+                  font-size: 16px;
+                }
+              }
+              .profile_slider_row::before {
+                transition: 0.4s;
+                content: "";
+                position: absolute;
+                left: 10px;
+                border: 2px solid $Dark-Gray;
+                height: 0%;
+                border-radius: 10px;
+              }
+
+              .profile_slider_row:hover::before {
+                height: 15px;
+                left: 5px;
+              }
+              .profile_slider_row:hover i,
+              .profile_slider_row:hover a {
+                transform: translateX(10px);
+                color: $White;
+              }
+              .profile_slider_row:hover {
+                background-color: $Orange;
+              }
+            }
+            .log_out {
+              margin: 20px 0;
+              transition: 0.4s;
+              display: flex;
+              width: 100%;
+              height: 30px;
+              align-items: center;
+              justify-content: center;
+              gap: 5px;
+              border-radius: 5px;
+              border: none;
+              background-color: $Red;
+              color: $White;
+              font-family: $baloo_font;
+              cursor: pointer;
+              border: 2px solid transparent;
+              a {
+                text-decoration: none;
+                color: $White;
+              }
+            }
+            .log_out:hover {
+              background-color: transparent;
+              border-color: $Red;
+              color: $Red;
+              a {
+                color: $Red;
+              }
+            }
+          }
+        }
+        .profile_top_toggle {
+          i:nth-child(2) {
+            right: 45px;
+          }
+          i:last-child {
+            right: 10px;
+          }
+        }
+        .appear {
+          visibility: visible;
+          opacity: 1;
+          height: max-content;
+          .profile_slider_top,
+          .profile_slider_middle,
+          .profile_slider_bottom {
+            opacity: 1;
+          }
+          .profile_slider_top {
+            height: 70px;
+          }
+          .profile_slider_middle {
+            height: 130px;
+          }
+          .profile_slider_bottom {
+            height: 40px;
+          }
+        }
+      }
+    }
+  }
+  .header_middle {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .middle_container {
+      width: 1280px;
+      gap: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        cursor: pointer;
+        width: 200px;
+      }
+      .header_input {
+        position: relative;
+        width: 610px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        input {
+          padding-left: 15px;
+          padding-right: 40px;
+          width: 100%;
+          height: 61.6px;
+          border-radius: 5px;
+          border: 1px solid #eee;
+          font-family: $baloo_font;
+          outline-color: $Orange;
+        }
+        button {
+          cursor: pointer;
+          border: transparent;
+          width: 40px;
+          height: 40px;
+          background-color: $Orange;
+          position: absolute;
+          top: 12px;
+          border-radius: 10px;
+          right: 20px;
+          color: $White;
+          transition: 0.4s;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        button:hover {
+          transform: rotate(360deg);
+        }
+      }
+      .middle_buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        button {
+          position: relative;
+          width: 177px;
+          height: 60px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          font-family: $baloo_font;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          border: none;
+          background-color: $White;
+          border-radius: 10px;
+          cursor: pointer;
+          transition: 0.4s;
+          i {
+            color: $Orange;
+            font-size: 25px;
+            transition: 0.8s;
+          }
+          .tooltip {
+            transition: 0.4s;
+            width: 120px;
+            height: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            position: absolute;
+            background-color: $Black;
+            visibility: hidden;
+            opacity: 0;
+            color: $White;
+            top: -35px;
+            span {
+              width: 10px;
+              height: 10px;
+              display: block;
+              position: absolute;
+              transform: rotate(45deg);
+              background-color: $Black;
+              bottom: -4px;
+            }
+          }
+          @keyframes wiggle {
+            0%,
+            7% {
+              transform: rotateZ(0);
+            }
+            15% {
+              transform: rotateZ(-15deg);
+            }
+            20% {
+              transform: rotateZ(10deg);
+            }
+            25% {
+              transform: rotateZ(-10deg);
+            }
+            30% {
+              transform: rotateZ(6deg);
+            }
+            35% {
+              transform: rotateZ(-4deg);
+            }
+            40%,
+            100% {
+              transform: rotateZ(0);
+            }
+          }
+        }
+        button:hover {
+          background-color: $Orange;
+          color: $White;
+        }
+        button:first-child:hover .tooltip {
+          animation: wiggle 1.5s linear;
+          visibility: visible;
+          opacity: 1;
+        }
+        button:hover i {
+          color: $White;
+          transform: rotate(360deg);
+        }
+      }
+    }
+  }
+  .header_bottom {
+    z-index: 1000;
+    border-top: 1px solid #f5f5f5;
+    border-bottom: 1px solid #f5f5f5;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .bottom_container {
+      width: 1250px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      .dropdown {
+        position: relative;
+        flex-direction: column;
+        height: 100%;
+        .categories {
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+          width: 251px;
+          height: 100%;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          border: none;
+          background-color: $Orange;
+          color: $White;
+          font-family: $baloo_font;
+          font-size: 16px;
+        }
+        .dropdown_menu {
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+          background-color: $White;
+          position: absolute;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+          top: 50px;
+          width: 100%;
+          max-height: 200px;
+          overflow-y: scroll;
+          display: flex;
+          flex-direction: column;
+          transition: 0.4s;
+
+          a {
+            cursor: pointer;
+            transition: 0.4s;
+            color: $Dark-Gray;
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            padding-left: 20px;
+            font-size: 14px;
+            font-weight: 700;
+          }
+          a:first-child {
+            transition: 0.4s;
+          }
+          a:last-child {
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+          }
+          a:hover {
+            color: $Orange;
+            padding-left: 30px;
+            background-color: $Light-Gray3;
+          }
+        }
+        .dropdown_menu::-webkit-scrollbar {
+          width: 5px;
+          height: 10px;
+        }
+        .dropdown_menu::-webkit-scrollbar-thumb {
+          border-radius: 10px;
+          background-color: $Dark-Gray;
+        }
+      }
+      a {
+        cursor: pointer;
+        font-family: $baloo_font;
+        text-decoration: none;
+        color: $Black;
+        transition: 0.5s;
+      }
+      a:hover {
+        color: $Orange;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .header_top {
+      width: 100%;
+      height: 65px;
+      background-color: $Gray;
+      display: flex;
+      justify-content: center;
+      .header_left {
+        width: 340px;
+        display: flex;
+        align-items: center;
+        ul {
+          display: flex;
+          gap: 10px;
+          li {
+            cursor: pointer;
+            gap: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $Dark-Gray;
+            i {
+              margin-top: -1px;
+              font-size: 13px;
+              transition: 0.4s;
+            }
+            a {
+              font-size: 12px;
+              font-family: $baloo_font;
+              text-decoration: none;
+              color: $Dark-Gray;
+              transition: 0.4s;
+            }
+          }
+          li:nth-child(2) {
+            a {
+              width: 115px;
+            }
+          }
+          li:hover i,
+          li:hover a {
+            color: $Orange;
+            transform: translateY(1.2px);
+          }
+        }
+      }
+      .header_right {
+        width: 610px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 20px;
+        .modes {
+          background-color: $White;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          width: 70px;
+          height: 35px;
+          border-radius: 23px;
+          i {
+            width: 25px;
+            height: 25px;
+            display: flex;
+            font-size: 16px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            cursor: pointer;
+          }
+          i:first-child {
+            color: $Black;
+          }
+          i:last-child {
+            background-color: $Orange;
+            color: white;
+          }
+        }
+        .modes:hover {
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+        }
+        .header_buttons {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+          button {
+            cursor: pointer;
+            width: 57px;
+            height: 31px;
+            border-radius: 5px;
+            background-color: $Orange;
+            color: white;
+            border: none;
+            transition: 0.4s;
+          }
+          button:last-child {
+            width: 91px;
+            background-color: $Dark-Gray;
+          }
+          button:hover {
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+              rgba(0, 0, 0, 0.05) 0px 5px 10px;
+            transform: translateY(1.2px);
+          }
+        }
+      }
+    }
+    .header_middle {
+      width: 100%;
+      height: 110px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .middle_container {
+        width: 991px;
+        gap: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 200px;
+        }
+        .header_input {
+          position: relative;
+          width: 610px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          input {
+            padding-left: 15px;
+            padding-right: 40px;
+            width: 300px;
+            height: 61.6px;
+            border-radius: 5px;
+            border: 1px solid #eee;
+            font-family: $baloo_font;
+            outline-color: $Orange;
+          }
+          button {
+            cursor: pointer;
+            border: transparent;
+            width: 40px;
+            height: 40px;
+            background-color: $Orange;
+            position: absolute;
+            top: 12px;
+            border-radius: 10px;
+            right: 20px;
+            color: $White;
+            transition: 0.4s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          button:hover {
+            transform: rotate(360deg);
+          }
+        }
+        .middle_buttons {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          margin-right: 20px;
+          button {
+            width: 177px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-family: $baloo_font;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border: none;
+            background-color: $White;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.8s;
+            i {
+              color: $Orange;
+              font-size: 25px;
+              transition: 0.8s;
+            }
+          }
+          button:hover {
+            background-color: $Orange;
+            color: $White;
+          }
+          button:hover i {
+            color: $White;
+            transform: rotate(360deg);
+          }
+        }
+      }
+    }
+    .header_bottom {
+      border-top: 1px solid #f5f5f5;
+      border-bottom: 1px solid #f5f5f5;
+      width: 100%;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .bottom_container {
+        width: 991px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        .categories {
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+          width: 251px;
+          height: 100%;
+          border-radius: 10px;
+          border: none;
+          background-color: $Orange;
+          color: $White;
+          font-family: $baloo_font;
+          font-size: 16px;
+        }
+        a {
+          font-family: $baloo_font;
+          text-decoration: none;
+          color: $Black;
+          transition: 0.5s;
+        }
+        a:hover {
+          color: $Orange;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  header {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .header_top {
+      // z-index: 1000;
+      width: 100%;
+      height: 65px;
+      background-color: $White;
+      display: flex;
+      justify-content: center;
+      .header_left {
+        width: 300px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        #burger_menu {
+          cursor: pointer;
+          font-size: 30px;
+          color: $Dark-Gray;
+          display: initial;
+        }
+        ul {
+          display: none;
+          gap: 10px;
+          li {
+            gap: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $Dark-Gray;
+            i {
+              margin-top: -1px;
+              font-size: 13px;
+              transition: 0.4s;
+            }
+            a {
+              font-size: 12px;
+              font-family: $baloo_font;
+              text-decoration: none;
+              color: $Dark-Gray;
+              transition: 0.4s;
+            }
+          }
+          li:nth-child(2) {
+            a {
+              width: 115px;
+            }
+          }
+          li:hover i,
+          li:hover a {
+            color: $Orange;
+            transform: translateY(1.2px);
+          }
+        }
+      }
+      .header_right {
+        width: 300px;
+        height: 80px;
+
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 20px;
+        .modes {
+          background-color: $White;
+          display: none;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          width: 63px;
+          height: 35px;
+          border-radius: 23px;
+          i {
+            cursor: pointer;
+          }
+          i:first-child {
+            color: $Black;
+          }
+          i:last-child {
+            color: $Orange;
+          }
+        }
+        .modes:hover {
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+        }
+        .basket {
+          display: none;
+        }
+        .header_buttons {
+          display: none;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+          button {
+            cursor: pointer;
+            width: 57px;
+            height: 31px;
+            border-radius: 5px;
+            background-color: $Orange;
+            color: white;
+            border: none;
+            transition: 0.4s;
+          }
+          button:last-child {
+            width: 91px;
+            background-color: $Dark-Gray;
+          }
+          button:hover {
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+              rgba(0, 0, 0, 0.05) 0px 5px 10px;
+            transform: translateY(1.2px);
+          }
+        }
+        #login_user {
+          color: $Dark-Gray;
+          font-size: 30px;
+          display: initial;
+        }
+      }
+    }
+    .header_middle {
+      margin-top: 20px;
+      width: 100%;
+      height: 110px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .middle_container {
+        z-index: 1000;
+        width: 270px;
+        gap: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        img {
+          width: 450px;
+        }
+        .header_input {
+          position: relative;
+          width: 610px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          input {
+            padding-left: 15px;
+            padding-right: 40px;
+            width: 100%;
+            height: 61.6px;
+            border-radius: 5px;
+            border: 1px solid #eee;
+            font-family: $baloo_font;
+            outline-color: $Orange;
+          }
+          button {
+            cursor: pointer;
+            border: transparent;
+            width: 40px;
+            height: 40px;
+            background-color: $Orange;
+            position: absolute;
+            top: 12px;
+            border-radius: 10px;
+            right: 20px;
+            color: $White;
+            transition: 0.4s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          button:hover {
+            transform: rotate(360deg);
+          }
+        }
+        .middle_buttons {
+          display: none;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          margin-right: 20px;
+          button {
+            width: 177px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-family: $baloo_font;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border: none;
+            background-color: $White;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.8s;
+            i {
+              color: $Orange;
+              font-size: 25px;
+              transition: 0.8s;
+            }
+          }
+          button:hover {
+            background-color: $Orange;
+            color: $White;
+          }
+          button:hover i {
+            color: $White;
+            transform: rotate(360deg);
+          }
+        }
+      }
+    }
+    .header_bottom {
+      border-top: 1px solid #f5f5f5;
+      border-bottom: 1px solid #f5f5f5;
+      width: 100%;
+      height: 50px;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      .bottom_container {
+        width: 991px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        .categories {
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+          width: 251px;
+          height: 100%;
+          border-radius: 10px;
+          border: none;
+          background-color: $Orange;
+          color: $White;
+          font-family: $baloo_font;
+          font-size: 16px;
+        }
+        a {
+          font-family: $baloo_font;
+          text-decoration: none;
+          color: $Black;
+          transition: 0.5s;
+        }
+        a:hover {
+          color: $Orange;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  header {
+    width: 100%;
+    display: flex;
+    height: 220px;
+    align-items: center;
+    flex-direction: column;
+    .header_top {
+      z-index: 1000;
+      width: 100%;
+      height: 65px;
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      .header_left {
+        width: 170px;
+        display: flex;
+        align-items: center;
+        .burger_menu {
+          cursor: pointer;
+          font-size: 30px;
+          color: $Dark-Gray;
+          display: flex;
+        }
+        ul {
+          display: none;
+          gap: 10px;
+          li {
+            gap: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $Dark-Gray;
+            i {
+              margin-top: -1px;
+              font-size: 13px;
+              transition: 0.4s;
+            }
+            a {
+              font-size: 12px;
+              font-family: $baloo_font;
+              text-decoration: none;
+              color: $Dark-Gray;
+              transition: 0.4s;
+            }
+          }
+          li:nth-child(2) {
+            a {
+              width: 115px;
+            }
+          }
+          li:hover i,
+          li:hover a {
+            color: $Orange;
+            transform: translateY(1.2px);
+          }
+        }
+      }
+      .header_right {
+        width: 170px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 20px;
+        .modes {
+          background-color: $White;
+          display: none;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          width: 63px;
+          height: 35px;
+          border-radius: 23px;
+          i {
+            cursor: pointer;
+          }
+          i:first-child {
+            color: $Black;
+          }
+          i:last-child {
+            color: $Orange;
+          }
+        }
+        .modes:hover {
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+        }
+        .header_buttons {
+          display: none;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+          button {
+            cursor: pointer;
+            width: 57px;
+            height: 31px;
+            border-radius: 5px;
+            background-color: $Orange;
+            color: white;
+            border: none;
+            transition: 0.4s;
+          }
+          button:last-child {
+            width: 91px;
+            background-color: $Dark-Gray;
+          }
+          button:hover {
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+              rgba(0, 0, 0, 0.05) 0px 5px 10px;
+            transform: translateY(1.2px);
+          }
+        }
+        #login_user {
+          color: $Dark-Gray;
+          font-size: 30px;
+          display: initial;
+        }
+
+        .profile {
+          position: relative;
+          font-family: $baloo_font;
+          display: flex;
+          flex-direction: column;
+          .profile_top {
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            background-color: $White;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+              rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+              rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            img {
+              margin-right: 0;
+              width: 30px;
+              border-radius: 50%;
+            }
+            i {
+              transition: 0.4s;
+              color: $Orange;
+              display: none;
+            }
+          }
+          .profile_slider {
+            transition: 0.4s;
+            z-index: 10000;
+            border-radius: 5px;
+            width: 300px;
+            right: 0;
+            top: 60px;
+            height: 0;
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+            background-color: $White;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid $Light-Gray3;
+            align-items: center;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+              rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+              rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+            .profile_slider_top {
+              transition: 0.4s;
+              opacity: 0;
+              width: 280px;
+              height: 70px;
+              height: 0;
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              border-bottom: 1px solid $Light-Gray3;
+              img {
+                width: 50px;
+                border-radius: 50%;
+              }
+              div {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                p:first-child {
+                  font-size: 18px;
+                }
+                p:last-child {
+                  font-size: 12px;
+                }
+              }
+            }
+            .profile_slider_middle {
+              transition: 0.4s;
+              opacity: 0;
+              width: 280px;
+              height: 130px;
+              height: 0;
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              border-bottom: 1px solid $Light-Gray3;
+              div {
+                border-radius: 5px;
+                width: 100%;
+                border: 2px solid $Orange;
+                height: 110px;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                align-items: center;
+                justify-content: space-around;
+                p {
+                  font-size: 16px;
+                  font-weight: 700;
+                }
+                span {
+                  font-size: 22px;
+                  color: $Orange;
+                  font-weight: 700;
+                }
+                button {
+                  transition: 0.4s;
+                  cursor: pointer;
+                  width: 95%;
+                  background-color: $Orange;
+                  border: 2px solid transparent;
+                  border-radius: 5px;
+                  height: 25px;
+                  color: $White;
+                  font-family: $baloo_font;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                }
+                button:hover {
+                  background-color: transparent;
+                  color: $Orange;
+                  border-color: $Orange;
+                }
+              }
+            }
+            .profile_slider_bottom {
+              transition: 0.4s;
+              opacity: 0;
+              width: 280px;
+              height: 200px;
+              height: 0;
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+              gap: 10px;
+              justify-content: center;
+              .profile_slider_menu {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                align-items: start;
+                justify-content: space-around;
+                .profile_slider_row {
+                  transition: 0.4s;
+                  position: relative;
+                  cursor: pointer;
+                  border-radius: 5px;
+                  width: 100%;
+                  height: 30px;
+                  display: flex;
+                  align-items: center;
+                  gap: 10px;
+                  i {
+                    transition: 0.4s;
+                    margin-left: 20px;
+                    font-size: 18px;
+                    color: $Dark-Gray;
+                  }
+                  a {
+                    transition: 0.4s;
+                    color: $Dark-Gray;
+                    text-decoration: none;
+                    font-size: 16px;
+                  }
+                }
+                .profile_slider_row::before {
+                  transition: 0.4s;
+                  content: "";
+                  position: absolute;
+                  left: 10px;
+                  border: 2px solid $Dark-Gray;
+                  height: 0%;
+                  border-radius: 10px;
+                }
+
+                .profile_slider_row:hover::before {
+                  height: 15px;
+                  left: 5px;
+                }
+                .profile_slider_row:hover i,
+                .profile_slider_row:hover a {
+                  transform: translateX(10px);
+                  color: $White;
+                }
+                .profile_slider_row:hover {
+                  background-color: $Orange;
+                }
+              }
+              .log_out {
+                margin: 10px 0;
+                transition: 0.4s;
+                display: flex;
+                width: 100%;
+                height: 30px;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                border-radius: 5px;
+                border: none;
+                background-color: $Red;
+                color: $White;
+                font-family: $baloo_font;
+                cursor: pointer;
+                border: 2px solid transparent;
+              }
+              .log_out:hover {
+                background-color: transparent;
+                border-color: $Red;
+                color: $Red;
+              }
+            }
+          }
+          .appear {
+            visibility: visible;
+            opacity: 1;
+            height: max-content;
+            .profile_slider_top,
+            .profile_slider_middle,
+            .profile_slider_bottom {
+              opacity: 1;
+            }
+            .profile_slider_top {
+              height: 70px;
+            }
+            .profile_slider_middle {
+              height: 130px;
+            }
+            .profile_slider_bottom {
+              height: 40px;
+            }
+          }
+        }
+      }
+    }
+    .header_middle {
+      z-index: 1;
+      margin-top: -20px;
+      width: 100%;
+      height: 110px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .middle_container {
+        width: 340px;
+        gap: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        img {
+          z-index: 1;
+          margin-left: -20px;
+          width: 250px;
+        }
+        .header_input {
+          position: relative;
+          width: 340px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          input {
+            padding-left: 15px;
+            padding-right: 40px;
+            width: 100%;
+            height: 61.6px;
+            border-radius: 5px;
+            border: 1px solid #eee;
+            font-family: $baloo_font;
+            outline-color: $Orange;
+          }
+          button {
+            cursor: pointer;
+            border: transparent;
+            width: 40px;
+            height: 40px;
+            background-color: $Orange;
+            position: absolute;
+            top: 12px;
+            border-radius: 10px;
+            right: 20px;
+            color: $White;
+            transition: 0.4s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          button:hover {
+            transform: rotate(360deg);
+          }
+        }
+        .middle_buttons {
+          display: none;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          margin-right: 20px;
+          button {
+            width: 177px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-family: $baloo_font;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border: none;
+            background-color: $White;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.8s;
+            i {
+              color: $Orange;
+              font-size: 25px;
+              transition: 0.8s;
+            }
+          }
+          button:hover {
+            background-color: $Orange;
+            color: $White;
+          }
+          button:hover i {
+            color: $White;
+            transform: rotate(360deg);
+          }
+        }
+      }
+    }
+    .header_bottom {
+      border-top: 1px solid #f5f5f5;
+      border-bottom: 1px solid #f5f5f5;
+      width: 0%;
+      height: 50px;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      .bottom_container {
+        width: 991px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        .categories {
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+          width: 251px;
+          height: 100%;
+          border-radius: 10px;
+          border: none;
+          background-color: $Orange;
+          color: $White;
+          font-family: $baloo_font;
+          font-size: 16px;
+        }
+        a {
+          font-family: $baloo_font;
+          text-decoration: none;
+          color: $Black;
+          transition: 0.5s;
+        }
+        a:hover {
+          color: $Orange;
+        }
+      }
+    }
+  }
+}
