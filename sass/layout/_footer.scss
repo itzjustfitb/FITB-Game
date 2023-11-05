@@ -1,0 +1,844 @@
+footer {
+  width: 100%;
+  font-family: $baloo_font;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .footer_top {
+    width: 100%;
+    height: 265px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    .footer_row {
+      background-color: $Gray;
+      border-radius: 10px;
+      height: 200px;
+      width: 304.5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      i {
+        transition: 0.8s;
+        width: 70px;
+        height: 70px;
+        border: 2px solid $Orange;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        color: $Orange;
+      }
+      h3 {
+        color: $Orange;
+        font-size: 20px;
+        margin-top: 15px;
+        margin-bottom: 12px;
+        font-weight: 500;
+      }
+      p {
+        width: 240px;
+        font-size: 14px;
+        font-weight: 500;
+        color: $Dark-Gray;
+        text-align: center;
+      }
+    }
+    .footer_row:hover i {
+      transform: rotate(360deg);
+    }
+  }
+  .footer_middle {
+    background-color: $Gray;
+    width: 100%;
+    height: 341.6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    .row1,
+    .row2,
+    .row3 {
+      width: 396.66px;
+    }
+    .row1 {
+      height: 231.6px;
+      gap: 30px;
+      display: flex;
+      flex-direction: column;
+      h1 {
+        font-size: 28px;
+        border-left: 3px solid $Orange;
+        padding-left: 20px;
+        font-weight: 500;
+        color: $Dark-Gray;
+      }
+      p {
+        font-size: 14px;
+        line-height: 28px;
+        font-weight: 500;
+        color: $Dark-Gray;
+      }
+    }
+    .row2 {
+      height: 231.6px;
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+      p {
+        color: $Dark-Gray;
+        position: relative;
+        font-size: 28px;
+        font-weight: 500;
+      }
+      p::before {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        width: 13%;
+        border-bottom: 3px solid $Orange;
+      }
+      .footer_links {
+        display: flex;
+        .left_links,
+        .right_links {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          a {
+            cursor: pointer;
+            transition: 0.4s;
+            width: 198px;
+            text-decoration: none;
+            color: $Dark-Gray;
+            font-weight: 500;
+          }
+          a:hover {
+            color: $Orange;
+          }
+        }
+      }
+    }
+    .row3 {
+      display: flex;
+      flex-direction: column;
+      height: 231.6px;
+      gap: 30px;
+      h1 {
+        color: $Dark-Gray;
+        position: relative;
+        font-size: 28px;
+        font-weight: 500;
+      }
+      h1::before {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        width: 13%;
+        border-bottom: 3px solid $Orange;
+      }
+      p {
+        font-size: 15px;
+        font-weight: 500;
+        color: $Dark-Gray;
+        line-height: 28px;
+      }
+      div {
+        display: flex;
+        width: 396.66px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        input {
+          height: 51.6px;
+          border-radius: 5px;
+          border: 1px solid #eee;
+          width: 100%;
+          padding-left: 15px;
+          padding-right: 65px;
+          outline-color: $Orange;
+        }
+        button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          background-color: $Orange;
+          right: 0;
+          border: none;
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+          width: 59.25px;
+          height: 54px;
+          position: absolute;
+          i {
+            font-size: 20px;
+            color: $White;
+          }
+        }
+      }
+    }
+  }
+  .footer_bottom {
+    height: 74px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      color: $Dark-Gray;
+      width: 610px;
+    }
+    div {
+      display: flex;
+      justify-content: end;
+      gap: 15px;
+      width: 610px;
+      i {
+        color: $Dark-Gray;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  footer {
+    width: 100%;
+    font-family: $baloo_font;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .footer_top {
+      width: 100%;
+      height: 265px;
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+      .footer_row {
+        background-color: $Gray;
+        border-radius: 10px;
+        height: 200px;
+        width: 245px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        i {
+          transition: 0.8s;
+          width: 70px;
+          height: 70px;
+          border: 2px solid $Orange;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 30px;
+          color: $Orange;
+        }
+        h3 {
+          color: $Orange;
+          font-size: 20px;
+          margin-top: 15px;
+          margin-bottom: 12px;
+          font-weight: 500;
+        }
+        p {
+          width: 240px;
+          font-size: 14px;
+          font-weight: 500;
+          color: $Dark-Gray;
+          text-align: center;
+        }
+      }
+      .footer_row:hover i {
+        transform: rotate(360deg);
+      }
+    }
+    .footer_middle {
+      background-color: $Gray;
+      width: 100%;
+      height: 341.6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 17px;
+      .row1,
+      .row2,
+      .row3 {
+        width: 320px;
+      }
+      .row1 {
+        height: 231.6px;
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+        h1 {
+          font-size: 28px;
+          border-left: 3px solid $Orange;
+          padding-left: 12px;
+          font-weight: 500;
+          color: $Dark-Gray;
+        }
+        p {
+          font-size: 14px;
+          line-height: 28px;
+          font-weight: 500;
+          color: $Dark-Gray;
+        }
+      }
+      .row2 {
+        height: 231.6px;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        p {
+          color: $Dark-Gray;
+          position: relative;
+          font-size: 28px;
+          font-weight: 500;
+        }
+        p::before {
+          content: "";
+          position: absolute;
+          bottom: -10px;
+          width: 13%;
+          border-bottom: 3px solid $Orange;
+        }
+        .footer_links {
+          display: flex;
+          .left_links,
+          .right_links {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            a {
+              transition: 0.4s;
+              width: 198px;
+              text-decoration: none;
+              color: $Dark-Gray;
+              font-weight: 500;
+            }
+            a:hover {
+              color: $Orange;
+            }
+          }
+        }
+      }
+      .row3 {
+        display: flex;
+        flex-direction: column;
+        height: 231.6px;
+        gap: 30px;
+        h1 {
+          color: $Dark-Gray;
+          position: relative;
+          font-size: 28px;
+          font-weight: 500;
+        }
+        h1::before {
+          content: "";
+          position: absolute;
+          bottom: -10px;
+          width: 13%;
+          border-bottom: 3px solid $Orange;
+        }
+        p {
+          font-size: 15px;
+          font-weight: 500;
+          color: $Dark-Gray;
+          line-height: 28px;
+        }
+        div {
+          display: flex;
+          width: 320px;
+          position: relative;
+          display: flex;
+          align-items: center;
+          input {
+            height: 51.6px;
+            border-radius: 5px;
+            border: 1px solid #eee;
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 65px;
+            outline-color: $Orange;
+          }
+          button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            background-color: $Orange;
+            right: 0;
+            border: none;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            width: 59.25px;
+            height: 54px;
+            position: absolute;
+            i {
+              font-size: 20px;
+              color: $White;
+            }
+          }
+        }
+      }
+    }
+    .footer_bottom {
+      height: 74px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p {
+        color: $Dark-Gray;
+        width: 500px;
+      }
+      div {
+        display: flex;
+        justify-content: end;
+        gap: 15px;
+        width: 500px;
+        i {
+          color: $Dark-Gray;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  footer {
+    width: 100%;
+    font-family: $baloo_font;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .footer_top {
+      width: 620px;
+      height: 500px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+      .footer_row {
+        background-color: $Gray;
+        border-radius: 10px;
+        height: 230px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        i {
+          transition: 0.8s;
+          width: 70px;
+          height: 70px;
+          border: 2px solid $Orange;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 30px;
+          color: $Orange;
+        }
+        h3 {
+          color: $Orange;
+          font-size: 20px;
+          margin-top: 15px;
+          margin-bottom: 12px;
+          font-weight: 500;
+        }
+        p {
+          width: 240px;
+          font-size: 14px;
+          font-weight: 500;
+          color: $Dark-Gray;
+          text-align: center;
+        }
+      }
+      .footer_row:hover i {
+        transform: rotate(360deg);
+      }
+    }
+    .footer_middle {
+      background-color: $Gray;
+      gap: 0px;
+      width: 100%;
+      height: 600px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      .row2,
+      .row3 {
+        width: 300px;
+      }
+      .row1 {
+        width: 600px;
+        height: 170px;
+        margin-right: 50px;
+        margin-left: 50px;
+        display: flex;
+        flex-direction: column;
+        h1 {
+          font-size: 28px;
+          border-left: 3px solid $Orange;
+          padding-left: 12px;
+          font-weight: 500;
+          color: $Dark-Gray;
+        }
+        p {
+          font-size: 14px;
+          line-height: 28px;
+          font-weight: 500;
+          color: $Dark-Gray;
+        }
+      }
+      .row2 {
+        height: 231.6px;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        p {
+          color: $Dark-Gray;
+          position: relative;
+          font-size: 28px;
+          font-weight: 500;
+        }
+        p::before {
+          content: "";
+          position: absolute;
+          bottom: -10px;
+          width: 13%;
+          border-bottom: 3px solid $Orange;
+        }
+        .footer_links {
+          display: flex;
+          gap: 0px;
+          .left_links,
+          .right_links {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            a {
+              transition: 0.4s;
+              width: 120px;
+              text-decoration: none;
+              color: $Dark-Gray;
+              font-weight: 500;
+            }
+            a:hover {
+              color: $Orange;
+            }
+          }
+          .left_links {
+            width: 160px;
+          }
+        }
+      }
+      .row3 {
+        display: flex;
+        flex-direction: column;
+        height: 231.6px;
+        gap: 30px;
+        h1 {
+          color: $Dark-Gray;
+          position: relative;
+          font-size: 28px;
+          font-weight: 500;
+        }
+        h1::before {
+          content: "";
+          position: absolute;
+          bottom: -10px;
+          width: 13%;
+          border-bottom: 3px solid $Orange;
+        }
+        p {
+          font-size: 15px;
+          font-weight: 500;
+          color: $Dark-Gray;
+          line-height: 28px;
+        }
+        div {
+          display: flex;
+          width: 320px;
+          position: relative;
+          display: flex;
+          align-items: center;
+          input {
+            height: 51.6px;
+            border-radius: 5px;
+            border: 1px solid #eee;
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 65px;
+            outline-color: $Orange;
+          }
+          button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            background-color: $Orange;
+            right: 0;
+            border: none;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            width: 59.25px;
+            height: 54px;
+            position: absolute;
+            i {
+              font-size: 20px;
+              color: $White;
+            }
+          }
+        }
+      }
+    }
+    .footer_bottom {
+      height: 74px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p {
+        color: $Dark-Gray;
+        width: 300px;
+      }
+      div {
+        display: flex;
+        justify-content: end;
+        gap: 15px;
+        width: 300px;
+        i {
+          color: $Dark-Gray;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  footer {
+    margin-top: 0px;
+    width: 100%;
+    font-family: $baloo_font;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .footer_top {
+      width: 340px;
+      height: 380px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+      .footer_row {
+        background-color: $Gray;
+        border-radius: 10px;
+        height: 165px;
+        width: 165px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        i {
+          transition: 0.8s;
+          width: 50px;
+          height: 50px;
+          border: 2px solid $Orange;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 30px;
+          color: $Orange;
+        }
+        h3 {
+          color: $Orange;
+          font-size: 16px;
+          margin-top: 15px;
+          margin-bottom: 12px;
+          font-weight: 500;
+        }
+        p {
+          width: 150px;
+          font-size: 11px;
+          font-weight: 500;
+          color: $Dark-Gray;
+          text-align: center;
+        }
+      }
+      .footer_row:hover i {
+        transform: rotate(360deg);
+      }
+    }
+    .footer_middle {
+      background-color: $Gray;
+      gap: 20px;
+      width: 100%;
+      height: 850px;
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .row2,
+      .row3 {
+        width: 300px;
+      }
+      .row1 {
+        width: 300px;
+        height: 270px;
+        margin-right: 50px;
+        margin-left: 50px;
+        display: flex;
+        flex-direction: column;
+        h1 {
+          font-size: 28px;
+          border-left: 3px solid $Orange;
+          padding-left: 12px;
+          font-weight: 500;
+          color: $Dark-Gray;
+        }
+        p {
+          font-size: 14px;
+          line-height: 28px;
+          font-weight: 500;
+          color: $Dark-Gray;
+        }
+      }
+      .row2 {
+        height: 231.6px;
+        display: flex;
+        gap: 35px;
+        justify-content: center;
+        p {
+          color: $Dark-Gray;
+          position: relative;
+          font-size: 28px;
+          font-weight: 500;
+        }
+        p::before {
+          content: "";
+          position: absolute;
+          bottom: -10px;
+          width: 13%;
+          border-bottom: 3px solid $Orange;
+        }
+        .footer_links {
+          display: flex;
+          gap: 0px;
+          .left_links,
+          .right_links {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            a {
+              transition: 0.4s;
+              width: 120px;
+              text-decoration: none;
+              color: $Dark-Gray;
+              font-weight: 500;
+            }
+            a:hover {
+              color: $Orange;
+            }
+          }
+        }
+      }
+      .row3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 231.6px;
+        gap: 30px;
+        h1 {
+          color: $Dark-Gray;
+          position: relative;
+          font-size: 28px;
+          font-weight: 500;
+        }
+        h1::before {
+          content: "";
+          position: absolute;
+          bottom: -10px;
+          width: 13%;
+          border-bottom: 3px solid $Orange;
+        }
+        p {
+          font-size: 15px;
+          font-weight: 500;
+          color: $Dark-Gray;
+          line-height: 28px;
+        }
+        div {
+          display: flex;
+          width: 300px;
+          position: relative;
+          display: flex;
+          align-items: center;
+          input {
+            height: 51.6px;
+            border-radius: 5px;
+            border: 1px solid #eee;
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 65px;
+            outline-color: $Orange;
+          }
+          button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            background-color: $Orange;
+            right: 0;
+            border: none;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            width: 59.25px;
+            height: 54px;
+            position: absolute;
+            i {
+              font-size: 20px;
+              color: $White;
+            }
+          }
+        }
+      }
+    }
+    .footer_bottom {
+      height: 74px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p {
+        display: flex;
+        justify-content: center;
+        color: $Dark-Gray;
+        width: 100%;
+      }
+      div {
+        display: none;
+        justify-content: end;
+        gap: 15px;
+        width: 610px;
+        i {
+          color: $Dark-Gray;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
