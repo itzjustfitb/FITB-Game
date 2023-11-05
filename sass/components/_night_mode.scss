@@ -1,0 +1,737 @@
+.night_mode {
+  .preloader {
+    background-color: $Night-Section;
+  }
+  header {
+    .header_top {
+      background-color: $Night-Container;
+      color: $White;
+      .header_left {
+        ul {
+          li {
+            i {
+              color: $Night-Font;
+            }
+            a {
+              color: $Night-Font;
+            }
+          }
+        }
+      }
+      .header_right {
+        .modes {
+          transition: 0.4s;
+          background-color: #232323;
+          i:first-child {
+            transition: 0.4s;
+            color: $Night-Container;
+            background-color: $Night-Font;
+          }
+          i:last-child {
+            transition: 0.4s;
+            background-color: transparent;
+            color: $Orange;
+          }
+        }
+        .basket {
+          transition: 0.4s;
+          cursor: pointer;
+          font-family: $baloo-font;
+          width: 140px;
+          display: flex;
+          background-color: $Orange;
+          border-radius: 20px;
+          height: 30px;
+          span {
+            margin-left: -3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            font-weight: 530;
+            color: $Night-Font;
+            border-radius: 50%;
+            background-color: $Night-Border;
+          }
+          div {
+            width: 100px;
+            display: flex;
+            gap: 5px;
+            justify-content: center;
+            align-items: center;
+            color: $Night-Border;
+          }
+        }
+        .profile {
+          .profile_top {
+            background-color: $Night-Container;
+            border: 1px solid $Night-Border;
+          }
+          .profile_slider {
+            background-color: $Night-Section;
+            border-color: $Night-Border;
+            .profile_slider_top {
+              border-color: $Night-Border;
+              p {
+                color: $Night-Font;
+              }
+            }
+            .profile_slider_middle {
+              border-color: $Night-Border;
+              p {
+                color: $Night-Font;
+              }
+            }
+            .profile_slider_bottom {
+              .profile_slider_menu {
+                .profile_slider_row {
+                  i,
+                  a {
+                    color: $Night-Font;
+                  }
+                }
+                .profile_slider_row:hover {
+                  i,
+                  a {
+                    color: $Night-Container;
+                  }
+                }
+                .profile_slider_row::before {
+                  border-color: $Orange;
+                }
+                .profile_slider_row:hover:before {
+                  border-color: $Night-Container;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .header_middle {
+      background-color: $Night-Section;
+      .header_input {
+        input {
+          background-color: $Night-Container;
+          border-color: $Night-Border;
+          color: $Night-Font;
+        }
+      }
+      .middle_buttons {
+        button {
+          background-color: $Night-Section;
+          box-shadow: transparent 0px 7px 29px 0px;
+          border: 1px solid $Night-Border;
+          p {
+            color: $Night-Font;
+          }
+          .tooltip {
+            background-color: $Orange;
+            p {
+              color: $Night-Font;
+            }
+            span {
+              background-color: $Orange;
+            }
+          }
+        }
+      }
+    }
+    .header_bottom {
+      background-color: $Night-Section;
+      border-color: $Night-Border;
+      a {
+        color: $Night-Font;
+      }
+      .dropdown {
+        .dropdown_menu {
+          background-color: $Night-Border;
+          a {
+            color: $Night-Font;
+          }
+          a:hover {
+            background-color: $Night-Container;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    header {
+      background-color: $Night-Section;
+      .header_top {
+        background-color: transparent;
+        color: $White;
+        .header_left {
+          #burger_menu {
+            color: $Night-Font;
+          }
+          ul {
+            li {
+              i {
+                color: $Night-Font;
+              }
+              a {
+                color: $Night-Font;
+              }
+            }
+          }
+        }
+        .header_right {
+          #login_user {
+            color: $Night-Font;
+          }
+          .modes {
+            transition: 0.4s;
+            background-color: #232323;
+            i:first-child {
+              transition: 0.4s;
+              color: $Night-Container;
+              background-color: $Night-Font;
+            }
+            i:last-child {
+              transition: 0.4s;
+              background-color: transparent;
+              color: $Orange;
+            }
+          }
+        }
+      }
+      .header_middle {
+        background-color: $Night-Section;
+        .header_input {
+          input {
+            background-color: $Night-Container;
+            border-color: $Night-Border;
+            color: $Night-Font;
+          }
+        }
+        .middle_buttons {
+          button {
+            background-color: $Night-Section;
+            box-shadow: transparent 0px 7px 29px 0px;
+            border: 1px solid $Night-Border;
+            p {
+              color: $Night-Font;
+            }
+          }
+        }
+      }
+      .header_bottom {
+        background-color: $Night-Section;
+        border-color: $Night-Border;
+        a {
+          color: $Night-Font;
+        }
+        .dropdown {
+          .dropdown_menu {
+            background-color: $Night-Border;
+            a {
+              color: $Night-Font;
+            }
+            a:hover {
+              background-color: $Night-Container;
+            }
+          }
+        }
+      }
+    }
+  }
+  #sidebar {
+    background-color: $Night-Container;
+    #sidebar_links {
+      .link {
+        i {
+          color: $Night-Font;
+        }
+        a {
+          color: $Night-Font;
+        }
+      }
+    }
+    p {
+      color: $Night-Font;
+    }
+    #modes {
+      background-color: $Night-Section;
+      i:first-child {
+        background-color: $Night-Container;
+        color: $Night-Font;
+      }
+      i:last-child {
+        background-color: transparent;
+        color: $Orange;
+      }
+    }
+  }
+  .hero_section {
+    background-color: $Night-Section;
+  }
+  .orange_container {
+    background-color: $Night-Section;
+  }
+  .best_seller {
+    background-color: $Night-Section;
+    .best_seller_container {
+      img {
+        background-color: $Night-Container;
+      }
+      img:hover {
+        background-color: $Orange;
+      }
+    }
+  }
+  .user_infos {
+    background-color: $Night-Section;
+    .user_infos_container {
+      .user_infos_left {
+        background-color: $Night-Container;
+        .user_infos_top {
+          i {
+            color: $Orange;
+          }
+          .user_infos_title {
+            p,
+            span {
+              color: $Night-Font;
+            }
+            p:last-child {
+              span {
+                color: $Night-Font;
+              }
+            }
+          }
+        }
+        .user_infos_bottom {
+          .user_infos_row {
+            border-color: $Night-Border;
+            background-color: $Night-Container;
+            i,
+            p {
+              color: $Night-Font;
+            }
+          }
+          .user_infos_row:hover {
+            background-color: $Night-Border;
+          }
+        }
+      }
+      .my_profile {
+        background-color: $Night-Container;
+        p {
+          color: $Night-Font;
+        }
+        .my_profile_container {
+          .my_profile_card {
+            border-color: $Night-Border;
+            p {
+              border-color: $Night-Border;
+            }
+            .my_profile_value {
+              background-color: $Night-Section;
+              span {
+                color: $Night-Font;
+              }
+            }
+            span:last-child {
+              p {
+                color: $Night-Font;
+              }
+            }
+          }
+        }
+      }
+      .payments {
+        background-color: $Night-Container;
+        p {
+          color: $Night-Font;
+        }
+        .payments_info {
+          border-color: $Night-Border;
+        }
+        .payments_container {
+          .payments_row {
+            border-color: $Night-Border;
+          }
+          .payments_row {
+            border-color: transparent;
+          }
+        }
+      }
+      .orders {
+        background-color: $Night-Container;
+        p {
+          color: $Night-Font;
+        }
+        .orders_info {
+          border-color: $Night-Border;
+        }
+        .orders_container {
+          .orders_row {
+            border-color: $Night-Border;
+          }
+          .orders_row:last-child {
+            border-color: transparent;
+          }
+        }
+      }
+      .settings {
+        background-color: $Night-Container;
+        p {
+          color: $Night-Font;
+        }
+        .settings_container {
+          border-color: $Night-Border;
+          button:hover {
+            background-color: $Night-Container;
+            color: $Night-Font;
+          }
+          .settings_general {
+            .settings_row {
+              div {
+                label,
+                p {
+                  color: $Night-Font;
+                }
+                input {
+                  background-color: $Night-Section;
+                  border-color: $Night-Border;
+                  color: $Night-Font;
+                }
+                input:disabled {
+                  color: $Night-Section;
+                  background-color: $Night-Border;
+                }
+              }
+            }
+          }
+        }
+        .password_container {
+          button:hover {
+            background-color: $Night-Container;
+            color: $Night-Font;
+          }
+          .settings_row {
+            div {
+              label {
+                color: $Night-Font;
+              }
+              input {
+                background-color: $Night-Section;
+                border-color: $Night-Border;
+                color: $Night-Font;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .games_section {
+    background-color: $Night-Section;
+    .games_container {
+      .game {
+        background-color: #1d1c1c;
+        img {
+          background-color: $Night-Container;
+        }
+        p {
+          color: $Night-Font;
+        }
+      }
+    }
+  }
+  .about_us_section {
+    background-color: $Night-Section;
+    .about_us_container {
+      background-color: $Night-Container;
+      p {
+        color: $Night-Font;
+      }
+    }
+  }
+  .prices_section {
+    background-color: $Night-Section;
+    .prices_container {
+      .price_row {
+        background-color: $Night-Container;
+        .price_and_buttons {
+          p {
+            color: $Night-Font;
+          }
+          button {
+            border-color: $Night-Border;
+          }
+        }
+        h3,
+        p {
+          color: $Night-Font;
+        }
+      }
+    }
+  }
+  .question_section {
+    background-color: $Night-Section;
+    .question_container {
+      background-color: $Night-Container;
+      h1 {
+        color: $Night-Font;
+      }
+      .question_table {
+        background-color: $Night-Section;
+        .question_row {
+          .question {
+            border-color: $Night-Border;
+            p {
+              color: $Night-Font;
+            }
+          }
+          .question:hover {
+            background-color: $Night-Container;
+          }
+          .slider {
+            background-color: $Night-Section;
+            span {
+              color: $Night-Font;
+            }
+          }
+        }
+      }
+    }
+  }
+  .rules_section {
+    background-color: $Night-Section;
+    .rules_container {
+      background-color: $Night-Container;
+      p {
+        color: $Night-Font;
+      }
+      h1 {
+        color: $Night-Font;
+      }
+    }
+  }
+  .contact_us_section {
+    background-color: $Night-Section;
+    .contact_us_top {
+      .contact_us_card {
+        background-color: $Night-Container;
+        h5,
+        p {
+          color: $Night-Font;
+        }
+      }
+    }
+    .contact_us_bottom {
+      h3 {
+        color: $Night-Font;
+      }
+      .inputs {
+        input {
+          background-color: $Night-Container;
+          border-color: $Orange;
+          color: $Night-Font;
+        }
+      }
+      .textareas {
+        textarea {
+          background-color: $Night-Container;
+          border-color: $Orange;
+          color: $Night-Font;
+        }
+        #response_button {
+          > p {
+            span {
+              color: $Night-Font;
+            }
+          }
+        }
+      }
+    }
+  }
+  .add_balance_section {
+    background-color: $Night-Section;
+    .add_balance_container {
+      background-color: $Night-Container;
+      h5 {
+        color: $Night-Font;
+      }
+      .add_balance_table {
+        .add_balance_row {
+          .row_top {
+            border-color: $Night-Border;
+            .add_balance_title {
+              p,
+              h1 {
+                color: $Night-Font;
+              }
+            }
+            .card_owner {
+              h1,
+              p {
+                color: $Night-Font;
+              }
+            }
+          }
+
+          .row_slider {
+            border-color: $Night-Border;
+          }
+        }
+        .add_balance_row:last-child {
+          .row_top {
+            border-color: transparent;
+          }
+        }
+      }
+    }
+  }
+  .auth_section {
+    background-color: $Black;
+    .auth_container {
+      span {
+        background-color: $Night-Section;
+      }
+      span:hover {
+        background-color: $Orange;
+      }
+      .log_in,
+      .sign_up,
+      .forgot_password {
+        background-color: $Night-Section;
+        .content {
+          .modes {
+            transition: 0.4s;
+            background-color: $Night-Container;
+            i:first-child {
+              transition: 0.4s;
+              color: $Night-Container;
+              background-color: $Night-Font;
+            }
+            i:last-child {
+              transition: 0.4s;
+              background-color: transparent;
+              color: $Orange;
+            }
+          }
+          .input_box {
+            input {
+              background-color: $Night-Container;
+              color: $Night-Font;
+            }
+            i {
+              color: $Night-Font;
+            }
+          }
+          .sign_in_links {
+            a {
+              color: $Night-Font;
+            }
+          }
+        }
+      }
+    }
+    .auth_container::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient($Black, $Orange, $Black);
+      animation: animate 5s linear infinite;
+    }
+  }
+  .cart {
+    background-color: $Night-Section;
+    .cart_container {
+      .cart_left {
+        background-color: $Night-Container;
+        .cart_top {
+          border-color: $Night-Border;
+          p {
+            color: $Night-Font;
+          }
+        }
+        .cart_default {
+          > p:nth-child(2),
+          p:nth-child(3) {
+            color: $Night-Font;
+          }
+        }
+        .cart_bottom {
+          .cart_row {
+            border-color: $Night-Border;
+            p {
+              color: $Night-Font;
+            }
+          }
+        }
+      }
+      .cart_right {
+        .cart_price_container {
+          background-color: $Night-Container;
+          div {
+            border-color: $Night-Border;
+            p,
+            span {
+              color: $Night-Font;
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    background-color: $Night-Section;
+    .footer_top {
+      background-color: $Night-Section;
+      .footer_row {
+        background-color: $Night-Container;
+        p {
+          color: $Night-Font;
+        }
+      }
+    }
+    .footer_middle {
+      background-color: $Night-Container;
+      .row3 {
+        div {
+          input {
+            background-color: $Night-Container;
+            border-color: $Night-Border;
+          }
+        }
+      }
+      .footer_links {
+        .left_links,
+        .right_links {
+          a {
+            color: $Night-Font;
+          }
+        }
+      }
+      h1 {
+        color: $Night-Font;
+      }
+      p {
+        color: $Night-Font;
+      }
+    }
+    .footer_bottom {
+      background-color: $Night-Section;
+      p {
+        color: $Night-Font;
+      }
+      div {
+        a {
+          i {
+            color: $Night-Font;
+          }
+        }
+      }
+    }
+  }
+}
+
+.night_mode::-webkit-scrollbar {
+  background-color: $Night-Section;
+}
