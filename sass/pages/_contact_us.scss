@@ -1,0 +1,558 @@
+@import "../base/typography";
+
+.contact_us_section {
+  width: 100%;
+  font-family: $baloo-font;
+  height: 746.7px;
+  background-color: $Gray;
+  display: flex;
+  justify-content: center;
+  .contact_us_container {
+    width: 1250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .contact_us_top {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      .contact_us_card {
+        width: 396.66px;
+        height: 215.5px;
+        border-radius: 5px;
+        background-color: $White;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        div {
+          transition: 0.4s;
+          width: 80px;
+          height: 80px;
+          border: 5px solid $Orange;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          i {
+            transition: 0.8s;
+            color: $Orange;
+            font-size: 30px;
+          }
+        }
+        h5 {
+          font-size: 20px;
+          font-weight: 700;
+          height: 12px;
+          color: $Dark-Gray;
+        }
+        p {
+          color: $Dark-Gray;
+        }
+      }
+      .contact_us_card:hover i {
+        transform: rotate(360deg);
+        color: $White;
+      }
+      .contact_us_card:hover div {
+        background-color: $Orange;
+      }
+    }
+    .contact_us_bottom {
+      display: flex;
+      height: 504.2px;
+      gap: 20px;
+      flex-direction: column;
+      align-items: center;
+      h3 {
+        font-size: 2rem;
+        font-weight: 500;
+        color: $Dark-Gray;
+      }
+      div {
+        display: flex;
+        gap: 20px;
+        input {
+          transition: 0.4s;
+          font-family: $baloo-font;
+          width: 300px;
+          border-radius: 5px;
+          height: 47px;
+          border: 1px solid $Orange;
+          padding-left: 20px;
+          outline-color: $Orange;
+        }
+      }
+      .textareas {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        textarea {
+          transition: 0.4s;
+          width: 645px;
+          resize: none;
+          outline-color: $Orange;
+          border-radius: 5px;
+          font-family: $baloo-font;
+          padding-left: 20px;
+          padding-top: 10px;
+          border: 1px solid $Orange;
+        }
+
+        div {
+          width: 100%;
+          display: flex;
+          justify-content: end;
+          flex-direction: row-reverse;
+          align-items: center;
+          > p {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            color: red;
+            span {
+              color: $Dark-Gray;
+              font-weight: 700;
+            }
+          }
+          @keyframes shake {
+            25% {
+              transform: translateX(5px);
+            }
+            50% {
+              transform: translateX(-10px);
+            }
+            75% {
+              transform: translateX(10px);
+            }
+            100% {
+              transform: translateX(-5px);
+            }
+          }
+          .shake {
+            animation: shake 0.3s forwards;
+          }
+          .tick:hover {
+            cursor: not-allowed;
+            background-color: $Green;
+            border-color: $Green;
+            color: $White;
+          }
+          button {
+            position: relative;
+            transition: 0.4s;
+            cursor: pointer;
+            width: 100px;
+            border-radius: 5px;
+            height: 45.6px;
+            background-color: $Green;
+            border: 2px solid $Green;
+            font-weight: 400;
+            font-family: $baloo-font;
+            font-size: 16px;
+            color: $White;
+            i {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              transition: 0.4s;
+              opacity: 0;
+            }
+          }
+          button:disabled {
+            background-color: $Light-Gray3;
+            border: none;
+            color: $Orange;
+            cursor: not-allowed;
+          }
+          button:disabled:hover {
+            background-color: $Light-Gray3;
+            border: none;
+            color: $Orange;
+            cursor: not-allowed;
+          }
+          button:hover {
+            background-color: transparent;
+            color: $Green;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .contact_us_section {
+    width: 100%;
+    font-family: $baloo-font;
+    height: 746.7px;
+    background-color: $Gray;
+    display: flex;
+    justify-content: center;
+    .contact_us_container {
+      width: 1000px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .contact_us_top {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        .contact_us_card {
+          width: 313px;
+          height: 215.5px;
+          border-radius: 5px;
+          background-color: $White;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 15px;
+          div {
+            transition: 0.4s;
+            width: 80px;
+            height: 80px;
+            border: 5px solid $Orange;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i {
+              transition: 0.8s;
+              color: $Orange;
+              font-size: 30px;
+            }
+          }
+          h5 {
+            font-size: 20px;
+            font-weight: 700;
+            height: 12px;
+            color: $Dark-Gray;
+          }
+          p {
+            color: $Dark-Gray;
+          }
+        }
+        .contact_us_card:hover i {
+          transform: rotate(360deg);
+          color: $White;
+        }
+        .contact_us_card:hover div {
+          background-color: $Orange;
+        }
+      }
+      .contact_us_bottom {
+        display: flex;
+        height: 504.2px;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+        h3 {
+          font-size: 2rem;
+          font-weight: 500;
+          color: $Dark-Gray;
+        }
+        div {
+          display: flex;
+          gap: 20px;
+          input {
+            font-family: $baloo-font;
+            width: 300px;
+            border-radius: 5px;
+            height: 47px;
+            border: 1px solid $Light-Gray3;
+            padding-left: 20px;
+            outline-color: $Orange;
+          }
+        }
+        .textareas {
+          display: flex;
+          flex-direction: column;
+          align-items: end;
+          textarea {
+            width: 645px;
+            resize: none;
+            outline-color: $Orange;
+            border-radius: 5px;
+            font-family: $baloo-font;
+            padding-left: 20px;
+            padding-top: 10px;
+            border: 1px solid $Light-Gray3;
+          }
+          button {
+            transition: 0.4s;
+            cursor: pointer;
+            width: 102.66px;
+            border-radius: 5px;
+            height: 45.6px;
+            background-color: $Green;
+            font-weight: 400;
+            font-family: $baloo-font;
+            font-size: 16px;
+            color: $White;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .contact_us_section {
+    width: 100%;
+    font-family: $baloo-font;
+    height: 746.7px;
+    background-color: $Gray;
+    display: flex;
+    justify-content: center;
+    .contact_us_container {
+      width: 650px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .contact_us_top {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        .contact_us_card {
+          width: 180px;
+          height: 200px;
+          border-radius: 5px;
+          background-color: $White;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 15px;
+          div {
+            transition: 0.4s;
+            width: 50px;
+            height: 50px;
+            border: 5px solid $Orange;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i {
+              transition: 0.8s;
+              color: $Orange;
+              font-size: 22px;
+            }
+          }
+          h5 {
+            font-size: 20px;
+            font-weight: 700;
+            height: 12px;
+            color: $Dark-Gray;
+          }
+          p {
+            font-size: 11px;
+            color: $Dark-Gray;
+          }
+        }
+        .contact_us_card:hover i {
+          transform: rotate(360deg);
+          color: $White;
+        }
+        .contact_us_card:hover div {
+          background-color: $Orange;
+        }
+      }
+      .contact_us_bottom {
+        display: flex;
+        height: 504.2px;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+        h3 {
+          font-size: 2rem;
+          font-weight: 500;
+          color: $Dark-Gray;
+        }
+        div {
+          display: flex;
+          gap: 20px;
+          input {
+            font-family: $baloo-font;
+            width: 265px;
+            border-radius: 5px;
+            height: 47px;
+            border: 1px solid $Light-Gray3;
+            padding-left: 20px;
+            outline-color: $Orange;
+          }
+        }
+        .textareas {
+          display: flex;
+          flex-direction: column;
+          align-items: end;
+          textarea {
+            width: 570px;
+            resize: none;
+            outline-color: $Orange;
+            border-radius: 5px;
+            font-family: $baloo-font;
+            padding-left: 20px;
+            padding-top: 10px;
+            border: 1px solid $Light-Gray3;
+          }
+          button {
+            transition: 0.4s;
+            cursor: pointer;
+            width: 102.66px;
+            border-radius: 5px;
+            height: 45.6px;
+            background-color: $Green;
+            font-weight: 400;
+            font-family: $baloo-font;
+            font-size: 16px;
+            color: $White;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  .contact_us_section {
+    width: 100%;
+    font-family: $baloo-font;
+    height: 1200px;
+    background-color: $Gray;
+    display: flex;
+    justify-content: center;
+    .contact_us_container {
+      width: 340px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .contact_us_top {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        .contact_us_card {
+          width: 340px;
+          height: 160px;
+          border-radius: 5px;
+          background-color: $White;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 15px;
+          div {
+            transition: 0.4s;
+            width: 50px;
+            height: 50px;
+            border: 5px solid $Orange;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i {
+              transition: 0.8s;
+              color: $Orange;
+              font-size: 22px;
+            }
+          }
+          h5 {
+            font-size: 20px;
+            font-weight: 700;
+            height: 12px;
+            color: $Dark-Gray;
+          }
+          p {
+            font-size: 11px;
+            color: $Dark-Gray;
+          }
+        }
+        .contact_us_card:hover i {
+          transform: rotate(360deg);
+          color: $White;
+        }
+        .contact_us_card:hover div {
+          background-color: $Orange;
+        }
+      }
+      .contact_us_bottom {
+        display: flex;
+        height: 700px;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h3 {
+          font-size: 2rem;
+          font-weight: 500;
+          color: $Dark-Gray;
+        }
+        div {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          input {
+            font-family: $baloo-font;
+            width: 315px;
+            border-radius: 5px;
+            height: 47px;
+            border: 1px solid $Light-Gray3;
+            padding-left: 20px;
+            outline-color: $Orange;
+          }
+        }
+        .textareas {
+          display: flex;
+          flex-direction: column;
+          align-items: end;
+          textarea {
+            width: 315px;
+            resize: none;
+            outline-color: $Orange;
+            border-radius: 5px;
+            font-family: $baloo-font;
+            padding-left: 20px;
+            padding-top: 10px;
+            border: 1px solid $Light-Gray3;
+          }
+          div {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: space-between;
+            align-items: center;
+            > p {
+              display: flex;
+              flex-direction: column;
+              height: 33px;
+              align-items: start;
+              span {
+                font-weight: 700;
+              }
+            }
+            button {
+              transition: 0.4s;
+              cursor: pointer;
+              width: 100%;
+              border-radius: 5px;
+              height: 50px;
+              background-color: $Green;
+              border: 2px solid $Green;
+              font-weight: 400;
+              font-family: $baloo-font;
+              font-size: 16px;
+              color: $White;
+            }
+          }
+        }
+      }
+    }
+  }
+}
