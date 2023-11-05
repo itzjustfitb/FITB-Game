@@ -93,12 +93,12 @@ night_mode_toggle_sidebar.addEventListener("click", () => {
 });
 // ! --- night mode finishes here ---
 
-let profile_toggle = document.getElementsByClassName("profile_top")[0];
-let profile_slider = document.getElementsByClassName("profile_slider")[0];
-profile_toggle.addEventListener("click", () => {
-  profile_slider.classList.toggle("appear");
-  profile_toggle.classList.toggle("profile_top_toggle");
-});
+// let profile_toggle = document.getElementsByClassName("profile_top")[0];
+// let profile_slider = document.getElementsByClassName("profile_slider")[0];
+// profile_toggle.addEventListener("click", () => {
+//   profile_slider.classList.toggle("appear");
+//   profile_toggle.classList.toggle("profile_top_toggle");
+// });
 
 let mybutton = document.getElementById("myBtn");
 
