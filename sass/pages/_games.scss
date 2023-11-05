@@ -1,0 +1,181 @@
+.games_section {
+  background-color: $Gray;
+  font-family: $baloo-font;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .games_container {
+    margin: 20px 0;
+    width: 1250px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    .game {
+      transition: 0.4s;
+      cursor: pointer;
+      width: 242px;
+      height: 195.8px;
+      background-color: $Light-Gray3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      border-radius: 5px;
+      img {
+        background-color: $White;
+        width: 100%;
+        border-radius: 5px;
+      }
+      p {
+        transition: 0.4s;
+        font-weight: 700;
+      }
+    }
+    .game:hover {
+      background-color: $Orange;
+    }
+    .game:hover p {
+      color: $White;
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .games_section {
+    background-color: $Gray;
+    font-family: $baloo-font;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .games_container {
+      margin: 20px 0;
+      width: 1000px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      .game {
+        transition: 0.4s;
+        cursor: pointer;
+        width: 242px;
+        height: 195.8px;
+        background-color: $Light-Gray3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        img {
+          background-color: $White;
+          width: 100%;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+        }
+        p {
+          transition: 0.4s;
+          font-weight: 700;
+        }
+      }
+      .game:hover {
+        background-color: $Orange;
+      }
+      .game:hover p {
+        color: $White;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .games_section {
+    background-color: $Gray;
+    font-family: $baloo-font;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .games_container {
+      margin: 20px 0;
+      width: 600px;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      .game {
+        transition: 0.4s;
+        cursor: pointer;
+        width: 190px;
+        height: 160px;
+        background-color: $Light-Gray3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        img {
+          background-color: $White;
+          width: 100%;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+        }
+        p {
+          transition: 0.4s;
+          font-weight: 700;
+        }
+      }
+      .game:hover {
+        background-color: $Orange;
+      }
+      .game:hover p {
+        color: $White;
+      }
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  .games_section {
+    background-color: $Gray;
+    font-family: $baloo-font;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .games_container {
+      margin: 20px 0;
+      width: 340px;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      .game {
+        transition: 0.4s;
+        cursor: pointer;
+        width: 160px;
+        height: 140px;
+        background-color: $Light-Gray3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        img {
+          background-color: $White;
+          width: 100%;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+        }
+        p {
+          transition: 0.4s;
+          font-weight: 700;
+        }
+      }
+      .game:hover {
+        background-color: $Orange;
+      }
+      .game:hover p {
+        color: $White;
+      }
+    }
+  }
+}
