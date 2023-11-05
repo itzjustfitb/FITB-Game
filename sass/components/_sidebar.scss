@@ -1,0 +1,204 @@
+#sidebar {
+  font-family: $baloo_font;
+  z-index: 10000;
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  gap: 30px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  > div {
+    margin-top: 10px;
+    display: flex;
+    justify-content: end;
+  }
+  #close_button {
+    i {
+      margin-right: 20px;
+      background-color: transparent;
+      color: red;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid red;
+      border-radius: 5px;
+    }
+  }
+
+  #sidebar_links {
+    display: flex;
+    flex-direction: column;
+    .link {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      height: 40px;
+      border-bottom: 0.1px dotted $Dark-Gray;
+      i {
+        transition: 0.4s;
+        margin-top: -2px;
+        color: $Dark-Gray;
+        margin-left: 5px;
+      }
+      a {
+        transition: 0.4s;
+        color: $Dark-Gray;
+        text-decoration: none;
+      }
+    }
+    .link:hover i,
+    .link:hover a {
+      color: $Orange;
+      transform: translateX(6px);
+    }
+  }
+  .basket {
+    transition: 0.4s;
+    cursor: pointer;
+    font-family: $baloo-font;
+    width: 120px;
+    display: flex;
+    background-color: $Orange;
+    border-radius: 20px;
+    height: 30px;
+    span {
+      margin-left: -3px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      font-weight: 530;
+      border-radius: 50%;
+      background-color: $White;
+    }
+    div {
+      width: 100px;
+      display: flex;
+      gap: 5px;
+      justify-content: center;
+      align-items: center;
+      color: $White;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #sidebar {
+    transition: 0.4s;
+    font-family: $baloo_font;
+    z-index: 10000;
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    display: flex;
+    left: -400px;
+    flex-direction: column;
+    align-items: center;
+    background-color: $White;
+    gap: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    > div {
+      margin-top: 10px;
+      display: flex;
+      justify-content: end;
+    }
+    #close_button {
+      width: 100%;
+      cursor: pointer;
+      i {
+        transition: 0.4s;
+        margin-right: 20px;
+        background-color: transparent;
+        color: red;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid red;
+        border-radius: 5px;
+      }
+    }
+    #close_button:hover i {
+      background-color: red;
+      color: $White;
+    }
+
+    #sidebar_links {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      .link {
+        cursor: pointer;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        height: 50px;
+        padding-left: 10px;
+        border-bottom: 0.1px dotted $Dark-Gray;
+        transition: 0.4s;
+        i {
+          transition: 0.4s;
+          margin-top: -2px;
+          color: $Dark-Gray;
+          margin-left: 5px;
+        }
+        a {
+          transition: 0.4s;
+          color: $Dark-Gray;
+          text-decoration: none;
+        }
+      }
+      .link:hover i,
+      .link:hover a {
+        color: $Orange;
+        transform: translateX(6px);
+      }
+      .link:hover {
+        background-color: $Gray;
+      }
+    }
+    #modes {
+      cursor: pointer;
+      height: 30px;
+      margin-top: -10px;
+      border-radius: 20px;
+      align-items: center;
+      width: 70px;
+      gap: 10px;
+      display: flex;
+      justify-content: center;
+      background-color: $Gray;
+      i {
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 50%;
+      }
+      i:first-child {
+        color: $Dark-Gray;
+      }
+      i:last-child {
+        background-color: $Orange;
+        color: $White;
+      }
+    }
+    > p {
+      font-size: 10px;
+      height: 200px;
+      display: flex;
+      align-items: end;
+      justify-content: center;
+    }
+  }
+}
