@@ -1,0 +1,535 @@
+.prices_section {
+  background-color: $Gray;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: $baloo-font;
+  .prices_container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 1250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .price_row {
+      border-radius: 5px;
+      width: 100%;
+      background-color: $White;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 120px;
+      img {
+        width: 130px;
+        height: 130px;
+        border-radius: 5px;
+      }
+      .price_title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        width: 230px;
+        height: 40px;
+        color: $Dark-Gray;
+        h3 {
+          font-weight: 700;
+          font-size: 23px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+      .stock {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        i {
+          color: $Orange;
+          font-size: 23px;
+        }
+        p {
+          font-size: 28px;
+          color: green;
+        }
+      }
+      .price_and_buttons {
+        align-items: center;
+        display: flex;
+        .price {
+          width: 200px;
+          font-size: 28px;
+          color: $Dark-Gray;
+          span {
+            font-weight: 700;
+            color: $Orange;
+          }
+        }
+        .price_buttons {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          form {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            input {
+              background-color: #eeeeee;
+              padding-left: 5px;
+              font-size: 16px;
+              font-family: $baloo-font;
+              width: 40px;
+              height: 30px;
+              border-radius: 5px;
+              border: 2px solid $Light-Gray3;
+            }
+            button {
+              cursor: pointer;
+              transition: 0.4s;
+              font-family: $baloo-font;
+              font-size: 16px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              border-radius: 5px;
+              border: 2px solid $Light-Gray3;
+              background-color: $Orange;
+              width: 150px;
+              height: 60px;
+              i {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 70%;
+                border-radius: 5px;
+                width: 40px;
+                background-color: $Orange;
+                color: $White;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+                  rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+              }
+              p {
+                transition: 0.4s;
+                margin-left: 10px;
+                color: $White;
+                font-weight: 700;
+                font-size: 16px;
+              }
+            }
+            button:hover {
+              background-color: $White;
+              border: 2px solid $Orange;
+              transform: scale(0.95);
+            }
+            button:hover p {
+              color: $Orange;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .prices_section {
+    background-color: $Gray;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: $baloo-font;
+    .prices_container {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      width: 1000px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .price_row {
+        border-radius: 5px;
+        width: 100%;
+        background-color: $White;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        gap: 75px;
+        justify-content: center;
+        img {
+          width: 130px;
+          height: 130px;
+          border-radius: 5px;
+        }
+        .price_title {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 5px;
+          width: 190px;
+          height: 40px;
+          color: $Dark-Gray;
+          h3 {
+            font-weight: 700;
+            font-size: 20px;
+          }
+          p {
+            font-size: 12px;
+          }
+        }
+        .stock {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          i {
+            color: $Orange;
+            font-size: 23px;
+          }
+          p {
+            font-size: 28px;
+            color: green;
+          }
+        }
+        .price_and_buttons {
+          align-items: center;
+          display: flex;
+          .price {
+            width: 140px;
+            font-size: 28px;
+            color: $Dark-Gray;
+            span {
+              font-weight: 700;
+              color: $Orange;
+            }
+          }
+          .price_buttons {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            input {
+              background-color: #eeeeee;
+              padding-left: 5px;
+              font-size: 16px;
+              font-family: $baloo-font;
+              width: 40px;
+              height: 30px;
+              border-radius: 5px;
+              border: 2px solid $Light-Gray3;
+            }
+            button {
+              cursor: pointer;
+              transition: 0.4s;
+              font-family: $baloo-font;
+              font-size: 16px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              border-radius: 5px;
+              border: 2px solid $Light-Gray3;
+              background-color: $Orange;
+              width: 150px;
+              height: 60px;
+              i {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 70%;
+                border-radius: 5px;
+                width: 40px;
+                background-color: $Orange;
+                color: $White;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+                  rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+              }
+              p {
+                transition: 0.4s;
+                margin-left: 10px;
+                color: $White;
+                font-weight: 700;
+                font-size: 16px;
+              }
+            }
+            button:hover {
+              background-color: $White;
+              border: 2px solid $Orange;
+              transform: scale(0.95);
+            }
+            button:hover p {
+              color: $Orange;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .prices_section {
+    background-color: $Gray;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: $baloo-font;
+    .prices_container {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      width: 600px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .price_row {
+        border-radius: 5px;
+        width: 100%;
+        background-color: $White;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        justify-content: center;
+        img {
+          width: 130px;
+          height: 130px;
+          border-radius: 5px;
+        }
+        .price_title {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 5px;
+          width: 190px;
+          height: 40px;
+          color: $Dark-Gray;
+          h3 {
+            font-weight: 700;
+            font-size: 16px;
+          }
+          p {
+            font-size: 12px;
+          }
+        }
+        .stock {
+          display: none;
+          align-items: center;
+          gap: 10px;
+          i {
+            color: $Orange;
+            font-size: 23px;
+          }
+          p {
+            font-size: 28px;
+            color: green;
+          }
+        }
+        .price_and_buttons {
+          align-items: center;
+          display: flex;
+          flex-direction: column-reverse;
+          gap: 20px;
+          align-items: end;
+          .price {
+            width: 140px;
+            font-size: 28px;
+            color: $Dark-Gray;
+            span {
+              font-weight: 700;
+              color: $Orange;
+            }
+          }
+          .price_buttons {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            input {
+              background-color: #eeeeee;
+              padding-left: 5px;
+              font-size: 16px;
+              font-family: $baloo-font;
+              width: 40px;
+              height: 30px;
+              border-radius: 5px;
+              border: 2px solid $Light-Gray3;
+            }
+            button {
+              cursor: pointer;
+              transition: 0.4s;
+              font-family: $baloo-font;
+              font-size: 16px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              border-radius: 5px;
+              border: 2px solid $Light-Gray3;
+              background-color: $Orange;
+              width: 150px;
+              height: 60px;
+              i {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 70%;
+                border-radius: 5px;
+                width: 40px;
+                background-color: $Orange;
+                color: $White;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+                  rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+              }
+              p {
+                transition: 0.4s;
+                margin-left: 10px;
+                color: $White;
+                font-weight: 700;
+                font-size: 16px;
+              }
+            }
+            button:hover {
+              background-color: $White;
+              border: 2px solid $Orange;
+              transform: scale(0.95);
+            }
+            button:hover p {
+              color: $Orange;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  .prices_section {
+    background-color: $Gray;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: $baloo-font;
+    .prices_container {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      width: 340px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .price_row {
+        border-radius: 5px;
+        width: 100%;
+        background-color: $White;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        justify-content: center;
+        img {
+          width: 140px;
+          height: 140px;
+          border-radius: 5px;
+        }
+        .price_title {
+          display: none;
+          flex-direction: column;
+          justify-content: center;
+          gap: 5px;
+          width: 115px;
+          height: 40px;
+          color: $Dark-Gray;
+          h3 {
+            font-weight: 700;
+            font-size: 12px;
+          }
+          p {
+            font-size: 8px;
+          }
+        }
+        .stock {
+          display: none;
+          align-items: center;
+          gap: 10px;
+          i {
+            color: $Orange;
+            font-size: 23px;
+          }
+          p {
+            font-size: 28px;
+            color: green;
+          }
+        }
+        .price_and_buttons {
+          align-items: center;
+          display: flex;
+          flex-direction: column-reverse;
+          gap: 10px;
+          align-items: end;
+          text-align: end;
+          .price {
+            margin-right: 5px;
+            width: 120px;
+            font-size: 20px;
+            color: $Dark-Gray;
+            span {
+              font-weight: 700;
+              color: $Orange;
+            }
+          }
+          .price_buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            gap: 5px;
+            input {
+              background-color: #eeeeee;
+              padding-left: 5px;
+              font-size: 16px;
+              font-family: $baloo-font;
+              width: 30px;
+              height: 30px;
+              border-radius: 5px;
+              border: 2px solid $Light-Gray3;
+            }
+            button {
+              cursor: pointer;
+              transition: 0.4s;
+              font-family: $baloo-font;
+              font-size: 16px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              border-radius: 5px;
+              border: 2px solid $Light-Gray3;
+              background-color: $Orange;
+              width: 120px;
+              height: 40px;
+              i {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 70%;
+                border-radius: 5px;
+                width: 30px;
+                background-color: $Orange;
+                color: $White;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+                  rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+              }
+              p {
+                transition: 0.4s;
+                margin-left: 0px;
+                color: $White;
+                font-weight: 700;
+                font-size: 10px;
+                width: 50px;
+              }
+            }
+            button:hover {
+              background-color: $White;
+              border: 2px solid $Orange;
+              transform: scale(0.95);
+            }
+            button:hover p {
+              color: $Orange;
+            }
+          }
+        }
+      }
+    }
+  }
+}
